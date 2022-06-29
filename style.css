@@ -1,0 +1,190 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /*  Equal to 1rem => 10px */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.order-summary-section {
+  max-width: 144rem;
+  margin: 0 auto;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("images/pattern-background-desktop.svg"), hsl(225, 100%, 98%);
+  background-repeat: no-repeat;
+}
+
+.order-summary {
+  background-color: white;
+  border-radius: 10px;
+  max-width: 43rem;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.order-body {
+  padding: 3rem 4rem;
+}
+
+.order-image {
+  background-image: url("images/illustration-hero.svg");
+  height: 20rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-position: center;
+}
+
+.order-desc {
+  margin-bottom: 1.6rem;
+  text-align: center;
+}
+
+.order-desc h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.order-desc p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.order-plan {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.4rem 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.left img {
+  margin-right: 2rem;
+}
+
+.left p:last-child {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: hsl(224, 23%, 55%);
+}
+
+.left p:first-child {
+  color: hsl(223, 47%, 23%);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.order-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-plan .order-change-btn {
+  color: hsl(245, 75%, 52%);
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.4s ease;
+}
+
+.order-plan .order-change-btn:hover {
+  text-decoration: none;
+  color: rgb(106, 63, 234);
+}
+
+.order-proceed-button {
+  width: 100%;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 3rem;
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+
+.order-proceed-button:hover {
+  background-color: rgb(106, 63, 234);
+  box-shadow: 0px 13px 15px 0px rgba(106, 63, 234, 0.384);
+}
+
+.order-cancel-button {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: hsl(224, 23%, 55%);
+  cursor: pointer;
+  transition: color 0.4s ease;
+  width: 30%;
+  background-color: transparent;
+  border: none;
+}
+
+.order-cancel-button:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media (max-width: 400px) {
+  .order-summary-section {
+    background-image: url("/images/pattern-background-mobile.svg");
+    background-size: cover;
+  }
+
+  .order-summary-section {
+    padding: 5rem 1.6rem;
+  }
+
+  .order-summary {
+    width: 38rem;
+  }
+
+  .order-body {
+    padding-left: 3.4rem;
+    padding-right: 3.4rem;
+  }
+
+  .order-plan {
+    padding: 2rem;
+  }
+
+  .left img {
+    margin-right: 1.8rem;
+  }
+
+  .left p:first-child,
+  .left p:last-child {
+    font-size: 1.4rem;
+  }
+
+  .order-cancel-button {
+    width: 100%;
+  }
+}
