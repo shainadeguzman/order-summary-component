@@ -26,8 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Order summary card](https://shainadeguzman.github.io/order-summary-component/)
 
 ## My process
 
@@ -40,6 +39,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Shaina De Guzman](deguzman.netlify.app)
+- Website - [Shaina De Guzman](https://deguzman.netlify.app/)
 
 Thanks for checking out this project.
